@@ -1,0 +1,87 @@
+/* Application Layout */
+.app-layout {
+  display: flex; /* Sidebar and Main Content side-by-side */
+  height: 100vh; /* Occupy the full viewport height */
+  overflow: hidden; /*Prevent unnecessary horizontal scrolling */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 329px; /* Fixed width for Sidebar */
+  flex-shrink: 0; /* Prevent shrinking */
+  height: 100vh; /* Full vertical space */
+  background-color: #f8f9fa; /* Optional styling */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Section for Sidebar */
+.sidebar-header {
+  flex-shrink: 0; /* Prevent top section from scrolling */
+  background-color: #fff;
+  
+}
+
+/* Content Section (Scrollable part of Sidebar) */
+.sidebar-content {
+  overflow-y: auto; /* Enable vertical scrolling */
+  flex-grow: 1; /* Take remaining vertical space */
+ 
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  flex-grow: 1; /* Take up remaining width */
+  height: 100vh; /* Occupy full vertical space */
+  overflow: hidden; /* Handle scrolling only in content */
+}
+
+/* Top Navbar: Sticky at the Top */
+.TopNavbar {
+ /* Fixed height */
+  background-color:white; /* Solid background */
+  border-bottom: 1px solid #ddd; /* Visual separation */
+  position: sticky; /* Stick to top of main content */
+  top: 0; /* Fix position at the very top */
+  z-index: 1000; /* Ensure it overlaps other content */
+ 
+   /* Distribute content horizontally */
+  /* Center vertically */
+  /* Side padding for spacing */
+}
+
+/* Content Below TopNavbar is Scrollable */
+.content {
+  flex-grow: 1; /* Takes up available height */
+  overflow-y: auto; /* Scrollable content area */
+  padding: 16px; /* Comfortable spacing */
+}
+
+/* .dropdown-menu-expanded{
+  width:100%;
+  padding:8px; 
+  border-radius:5px;
+  
+} */
+body {
+  font-family: 'TheSansB', sans-serif;
+}
+
+/* Sidebar hover styles */
+.sidebar ul li:hover {
+  background-color:#FAF2FF; /* Light pink background on hover */
+  cursor: pointer; /* Optional: Changes cursor to pointer */
+}
+
+/* Ensure the text color remains consistent during hover */
+.sidebar ul li:hover a {
+  color: inherit; /* Inherit text color on hover */
+}
+
+hr {
+  margin: 0.5rem 0; /* This sets the top and bottom margins to 0.5rem */
+  margin-right: 0px;
+  margin-left: 0px;
+}

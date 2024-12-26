@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'TheSansB';
+    src: url('./fonts/TheSansB.woff2') format('woff2'),
+         url('./fonts/TheSansB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+    
