@@ -51,7 +51,7 @@ function Sidebar() {
       {/* Scrollable Section */}
       <div className="sidebar-content scrollable-section overflow-auto">
         {/* Secondary Links */}
-        <ul className="list-unstyled ">
+       <ul className="list-unstyled py-2 m-0 ">
           <SidebarItem icon={Mybenefits} label="My Benefits" link="#" />
           <SidebarItem icon={Pharmacylocation} label="Pharmacy Location" link="#" />
           <SidebarItem icon={Communicationpreferances} label="Communication Preferences" link="#" />
