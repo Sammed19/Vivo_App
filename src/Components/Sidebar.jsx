@@ -26,8 +26,8 @@ function Sidebar() {
   return (
     <div className="sidebar bg-white border h-100">
       {/* Top Sticky Section */}
-      <div className="sidebar-header sticky-top">
-        <div className="logo p-4">
+      <div className="sidebar-header border-bottom sticky-top">
+        <div className="logo px-4 pt-4 pb-3">
           <img
             src={VivoHealthlogo}
             alt="Vivo Health Logo"
@@ -36,7 +36,9 @@ function Sidebar() {
         </div>
         {/* Primary Links */}
         <ul className="list-unstyled ">
+          
           <SidebarItem icon={Home} label="Home" link="#" active />
+         
           <SidebarItem icon={Rx} label="Rx" link="#" />
           <SidebarItem icon={search} label="Find Care" link="#" />
           <SidebarItem icon={Me} label="Me" link="#" />
@@ -44,7 +46,7 @@ function Sidebar() {
         </ul>
       </div>
 
-      <hr />
+      {/* <hr /> */}
 
       {/* Scrollable Section */}
       <div className="sidebar-content scrollable-section overflow-auto">
