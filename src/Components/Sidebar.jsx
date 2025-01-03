@@ -15,6 +15,7 @@ import downarrow from '../assets/hamburger/downarrow.svg';
 
 function Sidebar() {
   const [dropdowns, setDropdowns] = useState({}); // Tracks state of all dropdowns
+  
 
   const toggleDropdown = (dropdown) => {
     setDropdowns((prev) => ({
